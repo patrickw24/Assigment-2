@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1> Assigment 2 </h1>
+<form>
+    <label> Song Name: </label>
+    <input id="inputSongName" type="text" required>
+
+    <label> Band/Artist Name: </label>
+    <input id="inputArtistName" type="text" required>
+
+    <label> Song Duration(Seconds): </label>
+    <input id="inputSongDuration" type="number" max="300">
+
+    <button onclick="songValidation()"> Submit </button>
+</form>
+
+<table id="songTable"></table>
+
+<script src="script.js"></script>
+</body>
+</html>
