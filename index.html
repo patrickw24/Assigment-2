@@ -9,17 +9,20 @@
 <body>
 
     <h1> Assigment 2 </h1>
-<form>
+<form onsubmit="songValidation()">
     <label> Song Name: </label>
-    <input id="inputSongName" type="text" required>
+    <span class="error" id="errorSongName"> </span>
+    <input id="inputSongName" type="text" >
 
     <label> Band/Artist Name: </label>
-    <input id="inputArtistName" type="text" required>
+    <span class="error" id="errorArtistName"></span>
+    <input id="inputArtistName" type="text" >
 
     <label> Song Duration(Seconds): </label>
-    <input id="inputSongDuration" type="number" max="300">
+    <span class="error" id="errorDuration"></span>
+    <input id="inputSongDuration" type="number" >
 
-    <button onclick="songValidation()"> Submit </button>
+    <button> Submit </button>
 </form>
 
 <table id="songTable"></table>
