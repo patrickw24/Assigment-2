@@ -19,6 +19,7 @@ if (songName.length === 0){
     errorSongName.innerHTML= "Please enter a song name"
 }else{
     validationSongName= true
+    errorSongName.innerHTML=""
 }
 
 if (artistName.length === 0){
@@ -26,6 +27,7 @@ if (artistName.length === 0){
     errorArtistName.innerHTML= "Please enter an artist/band name"
 }else{
     validationArtistName=true
+    errorArtistName.innerHTML=""
 }
 
 if (songDuration > 300){
@@ -33,6 +35,7 @@ if (songDuration > 300){
     errorDuration.innerHTML= "Please enter a song that is less than 300 seconds"
 }else{
     validationSongDuration=true
+    errorDuration.innerHTML=""
 }
 
 if (validationSongName === true && validationArtistName === true && validationSongDuration === true){
